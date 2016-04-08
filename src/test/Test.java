@@ -14,6 +14,11 @@ public class Test {
 		System.out.println("CH CH CHANGEEEES!!!");
 		System.out.println("(o_O)");
 		System.out.println("Don't want to be a better man\nTime may change meeee\nBut I can't trace time!");
+		
+		for(int i = 0; i < 4;i++) {
+			System.out.print("T-");
+		}
+		System.out.println("Time may change meee\nBut I can't trace time!");
 	}
 	
 
