@@ -12,6 +12,7 @@ public class Test {
 		System.out.println("changes.");
 		System.out.println("Turn and face the strain");
 		System.out.println("CH CH CHANGEEEES!!!");
+		System.out.println("(o_O)");
 	}
 	
 
