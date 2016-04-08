@@ -12,7 +12,8 @@ public class Test {
 		System.out.println("changes.");
 		System.out.println("Turn and face the strain");
 		System.out.println("CH CH CHANGEEEES!!!");
-		System.out.println("(o_O)");
+		System.out.println("(o_O");
+		System.out.println("Don't want to be a better man\nTime may change meeee\nBut I can't trace time!");
 	}
 	
 
