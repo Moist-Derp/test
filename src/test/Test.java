@@ -2,6 +2,13 @@ package test;
 
 public class Test {
 	
+	private static int numChanges = 1;
+	
+	//because i can
+	private static void printNumChanges() {
+		System.out.println("this begins the " + numChanges + " set of changes.");
+	}
+	
 	public static void main(String[] args) {
 		
 		System.out.println("test");
@@ -19,6 +26,10 @@ public class Test {
 			System.out.print("T-");
 		}
 		System.out.println("Time may change meee\nBut I can't trace time!");
+		
+		printNumChanges();
+		System.out.println("\'Nam changed me");
+		
 	}
 	
 
