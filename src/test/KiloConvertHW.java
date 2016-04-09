@@ -10,6 +10,12 @@ import java.awt.event.ActionListener;
 
 public class KiloConvertHW extends JFrame {
 	
+	/*
+	 * This is a gui that i used in cisy105. it kind of works but not really. you can enter an ammount
+	 * and then hit calculate but for some reason the listener doesnt act untill you move the window
+	 * (mouse over the window edge and resize it and then it moves on)
+	 */
+	
 	private JPanel panel;             // To reference a panel
 	private JLabel messageLabel;      // To reference a label
 	private JLabel messageLabel2;
