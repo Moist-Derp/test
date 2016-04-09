@@ -7,6 +7,7 @@ public class Test {
 	//because i can
 	private static void printNumChanges() {
 		System.out.println("this begins the " + numChanges + " set of changes.");
+		numChanges++;
 	}
 	
 	public static void main(String[] args) {
@@ -30,6 +31,10 @@ public class Test {
 		
 		printNumChanges();
 		System.out.println("\'Nam changed me");
+		
+		printNumChanges();
+		System.out.println("CAVE DWELLING PEBBLE MAN!");
+		System.out.println("shine bright like a jorah!");
 		
 	
 		
