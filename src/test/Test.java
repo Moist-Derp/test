@@ -21,6 +21,7 @@ public class Test {
 		System.out.println("CH CH CHANGEEEES!!!");
 		System.out.println("(o_O)");
 		System.out.println("Don't want to be a better man\nTime may change meeee\nBut I can't trace time!");
+		System.out.println("changes");
 		
 		for(int i = 0; i < 4;i++) {
 			System.out.print("T-");
@@ -29,6 +30,8 @@ public class Test {
 		
 		printNumChanges();
 		System.out.println("\'Nam changed me");
+		
+	
 		
 	}
 	
