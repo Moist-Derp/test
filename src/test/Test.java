@@ -36,6 +36,9 @@ public class Test {
 		System.out.println("CAVE DWELLING PEBBLE MAN!");
 		System.out.println("shine bright like a jorah!");
 		
+		printNumChanges();
+		System.out.println("Sup Team, Started from the bottom now we're here.");
+		System.out.println("...still on the bottom.");
 	
 		
 	}
