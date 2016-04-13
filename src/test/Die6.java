@@ -44,6 +44,46 @@ public class Die6 {
 		return largest;
 	}
 	
-	
+	/**
+	 * this method roll the number of dice specified and returns the sum of the top "x" dice
+	 * alternatively if were only ever going to want the top 3 dice of any roll than we eliminate the "x" param
+	 * and this method becomes much more efficient. again we could also make a different method called rollTop3
+	 * or something
+	 * can be changed to take bottom x if needed
+	 * @param numberOfDice number of dice to be rolled
+	 * @param x how many of the top dice to be added to sum
+	 * @return the sum of the top x dice
+	 */
+	public int roll(int numberOfDice, int x) {
+		int sum = 0;
+		if (x > numberOfDice || numberOfDice == 1) {
+			System.out.println("you messed up.");
+		} else if (numberOfDice == x) {
+			for (int i = 0; i < numberOfDice; i++) {
+				sum+=roll();
+			}
+		} else {
+			int[] results = new int[numberOfDice];
+			int[] top = new int[x];
+			for (int i = 0; i < numberOfDice; i++) {
+				results[i] = roll();
+			}
+			top[0] = results[0];
+			for (int i = 0; i < numberOfDice; i++) {
+				for (int j = 0; j < x; j++) {
+					if (results[i] > top[j]) {
+						for (int k = x-1; k > j; k--) {
+							top[k] = top[k-1];
+						}
+						top[j] = results[i];
+					}
+				}
+			}
+			for (int i = 0; i < x; i++) {
+				sum+=top[i];
+			}
+		}
+		return sum;
+	}
 	
 }
