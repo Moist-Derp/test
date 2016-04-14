@@ -28,7 +28,7 @@ public class Die6 {
 	/**
 	 * a more complex roll method that we may need depending on the mechanics we end up deciding to use.
 	 * rolls the number of dice that you tell it to and returns the largest result of those rolls.
-	 * (can also be changed to smallest depending on what we want or we can just make 2 seperate methods)
+	 * (can also be changed to smallest depending on what we want or we can just make 2 separate methods)
 	 * @param numberOfDice the number of dice to roll
 	 * @return the largest(?) of the rolls
 	 */
@@ -57,7 +57,7 @@ public class Die6 {
 	public int roll(int numberOfDice, int x) {
 		int sum = 0;
 		if (x > numberOfDice || numberOfDice == 1 || x==1) {
-			System.out.println("you messed up.");
+			throw new RuntimeException("use a more efficient method dingus");
 		} else if (numberOfDice == x) {
 			for (int i = 0; i < numberOfDice; i++) {
 				sum+=roll();
