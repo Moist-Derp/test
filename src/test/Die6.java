@@ -76,6 +76,7 @@ public class Die6 {
 							top[k] = top[k-1];
 						}
 						top[j] = results[i];
+						break;
 					}
 				}
 			}
