@@ -56,7 +56,7 @@ public class Die6 {
 	 */
 	public int roll(int numberOfDice, int x) {
 		int sum = 0;
-		if (x > numberOfDice || numberOfDice == 1) {
+		if (x > numberOfDice || numberOfDice == 1 || x==1) {
 			System.out.println("you messed up.");
 		} else if (numberOfDice == x) {
 			for (int i = 0; i < numberOfDice; i++) {
