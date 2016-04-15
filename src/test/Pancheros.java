@@ -38,6 +38,8 @@ public class Pancheros {
 											wentYesterday = false;
 										}
 										if (rando.nextInt(100) < odds) {
+											//you wont see the print in the program window. it was just to keep
+											//track of odds so i knew it was working right
 											System.out.println(odds);
 											decision.setText("VAMANOS");
 											wentYesterday = true;
