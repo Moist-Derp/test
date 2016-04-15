@@ -49,7 +49,6 @@ public class Pancheros {
 									}
 								}
 		);
-		frame.setBackground(Color.white);
 		frame.add(panel);
 		frame.setVisible(true);
 		
