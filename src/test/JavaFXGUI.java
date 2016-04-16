@@ -8,10 +8,16 @@ import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 public class JavaFXGUI extends Application {
+	
+	/*driver for application*/
 	public static void main(String[] args){
 		launch(args);
 	}
 	
+	/*start method
+	 * contains all methods and objects for visual components
+	 * buttons and what-not
+	 */
 	@Override
 	public void start(Stage primaryStage) throws Exception{
 		Button btn = new Button("click me");
@@ -23,7 +29,9 @@ public class JavaFXGUI extends Application {
 			}
 		});
 		StackPane root =  new StackPane();
+		//some object inheritance here, creates button
 		root.getChildren().add(btn);
+		//window size
 		Scene scene = new Scene(root,500,300);
 		primaryStage.setScene(scene);
 		primaryStage.show();
